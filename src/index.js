@@ -14,7 +14,10 @@ const client = new MongoClient(WM_CONNECTION_STRING, {
     console.log('Successfully connected.')
     process.exit(0)
   } catch (error) {
-    console.error(error)
+    console.log('Not connected.')
     process.exit(2)
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
   }
 })()

@@ -1,5 +1,4 @@
-
-FROM registry.mallgroup.com/x/docker-hub/node:dubnium-alpine3.11
+FROM node:dubnium-alpine3.11
 LABEL maintainer="Daniel Rataj <daniel.rataj@centrum.cz>"
 LABEL org.opencontainers.image.source="https://github.com/whoopsmonitor/whoopsmonitor-check-mongo-connect"
 LABEL com.whoopsmonitor.documentation="https://github.com/whoopsmonitor/whoopsmonitor-check-mongo-connect"
